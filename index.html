@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reverse, count, remove space</title>
+  <script src="index.js" defer></script>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    input {
+      width: 100%;
+      height: 30px;
+      margin-bottom: 10px;
+      border: none;
+      border-bottom: 2px solid black;
+    }
+
+    .container {
+      overflow: hidden;
+      width: 400px;
+      height: 100px;
+    }
+
+    .container > div {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    button {
+      width: 110px;
+      height: 40px;
+      border: none;
+      background-color: black;
+      color: whitesmoke;
+      transition: 1s all;
+    }
+
+    button:hover {
+      box-shadow: 2px 2px 5px 2px #252525;
+      transform: scale(1.1);
+    }
+
+    p {
+      font-size: 2em;
+      font-weight: 600;
+      color: green;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="textInput" placeholder="Enter text">
+    <div>
+      <button class="reverse" onclick="reverse()">Reverse</button>
+      <button class="count" onclick="count()">Count Vowels</button>
+      <button class="Remove_space" onclick="removeSpace()">Remove Whitespace</button>
+    </div>
+  </div>
+  <h2>OutPut:</h2>
+  <p id="output"></p>
+</body>
+</html>
